@@ -1,0 +1,18 @@
+@mixin scroll ($wid=10px, $trcolor=#32b34e, $thcolor=#2cb1c8, $btncolor=#2c62c8, $corcolor=#ff0505) {
+    ::-webkit-scrollbar {
+        width : $wid;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: $trcolor;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: $thcolor;
+    }
+    ::-webkit-scrollbar-button {
+        background-color: $btncolor;
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: $corcolor;
+    }
+}
+@include scroll;
